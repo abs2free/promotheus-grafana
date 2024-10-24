@@ -13,3 +13,9 @@ run-k6:
 
 down-k6:
 	cd k6 && docker-compose -f docker-compose.yml down
+
+up-node_exporter:
+	cd node_exporter && docker compose up -d
+
+down-node_exporter:
+	cd node_exporter && docker compose up -d
